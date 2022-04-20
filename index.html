@@ -1,23 +1,56 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
   <script src="libraries/p5.js"></script>
   <script src="libraries/p5.dom.min.js"></script>
   <script src="libraries/matter.js"></script>
   <script src="libraries/p5.play.js"></script>
 
   <script src="js/form.js"></script>
-<!--Link game.js e player.js-->
-   
-<script src="https://www.gstatic.com/firebasejs/8.9.1/firebase-database.js"></script>
 
-<!--Adicione configuração do banco de dados abaixo-->
-  
+  <script src="js/player.js"></script>
+  <script src="js/game.js"></script>
+  <!--Link game.js e player.js-->
+
+   <!-- ADICIONAR CÓDIGO Firebase SDK ABAIXO -->
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+  <script>
+    // AQUI O ARQUIVO DE CONEXÃO FIREBASE
+    // Initialize Firebase
+    const firebaseConfig = {
+
+apiKey: "AIzaSyA9iZ22p4dhgOvkYr26wfowO4OUUxeN9lM",
+
+authDomain: "apanhador-de-frutas-3977b.firebaseapp.com",
+
+databaseURL: "https://apanhador-de-frutas-3977b-default-rtdb.firebaseio.com",
+
+projectId: "apanhador-de-frutas-3977b",
+
+storageBucket: "apanhador-de-frutas-3977b.appspot.com",
+
+messagingSenderId: "36417639418",
+
+appId: "1:36417639418:web:f0d462f8b10314c2d88a43"
+
+};
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta charset="utf-8">
 
 </head>
+
 <body>
   <script src="sketch.js"></script>
 
 
 
-</body></html>
+</body>
+
+</html>

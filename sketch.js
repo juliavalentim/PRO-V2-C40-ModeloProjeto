@@ -14,6 +14,7 @@ var player_img;
 var player1score =0;
 var player2score =0;
 
+
 function preload(){
   back_img = loadImage("images/jungle.jpg");
   player_img = loadImage("images/basket2.png");
